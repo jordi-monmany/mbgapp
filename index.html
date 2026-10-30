@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mbgapp</title>
+  <meta name="description" content="mbgapp is a personal rclone-based tool that copies files from the owner's own Google Drive to the owner's own computer.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1c1c1c;
+      --muted: #5f5f5f;
+      --link: #0b57d0;
+      --rule: #dcdcdc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --fg: #e6e6e6;
+        --muted: #a3a3a3;
+        --link: #8ab4f8;
+        --rule: #343434;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      padding: 0 16px;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+    }
+    .wrap { max-width: 700px; margin: 0 auto; }
+    header {
+      padding: 20px 0 12px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 28px;
+    }
+    header a {
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.01em;
+    }
+    main { padding-bottom: 32px; }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 6px; }
+    h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+    p, li { margin: 0 0 14px; }
+    ul { padding-left: 22px; }
+    a { color: var(--link); }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 18px 0 32px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer nav a { margin-right: 16px; }
+    footer p { margin: 8px 0 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="./">mbgapp</a>
+    </header>
+    <main>
+      <h1>mbgapp</h1>
+      <p class="meta">Last updated: 2026-10-30</p>
+      <p>
+        mbgapp is a small personal tool built on <a href="https://rclone.org/">rclone</a>
+        that copies files from the owner&rsquo;s own Google Drive folders to the owner&rsquo;s own
+        computer. It is made for personal use by a single person, runs only on that
+        person&rsquo;s hardware, and is not offered as a service to anyone else.
+      </p>
+      <p>
+        The source code is published on GitHub at
+        <a href="https://github.com/jordi-monmany/mbgapp">github.com/jordi-monmany/mbgapp</a>.
+      </p>
+      <p>
+        Read the <a href="privacy.html">Privacy Policy</a> and the
+        <a href="terms.html">Terms of Service</a>.
+      </p>
+    </main>
+    <footer>
+      <nav>
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+      <p>Last updated: 2026-10-30</p>
+    </footer>
+  </div>
+</body>
+</html>

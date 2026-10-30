@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - mbgapp</title>
+  <meta name="description" content="Privacy policy for mbgapp, a personal tool that copies the owner's own Google Drive files to the owner's own computer.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1c1c1c;
+      --muted: #5f5f5f;
+      --link: #0b57d0;
+      --rule: #dcdcdc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --fg: #e6e6e6;
+        --muted: #a3a3a3;
+        --link: #8ab4f8;
+        --rule: #343434;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      padding: 0 16px;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+    }
+    .wrap { max-width: 700px; margin: 0 auto; }
+    header {
+      padding: 20px 0 12px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 28px;
+    }
+    header a {
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.01em;
+    }
+    main { padding-bottom: 32px; }
+    h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 6px; }
+    h2 { font-size: 1.2rem; margin: 28px 0 8px; }
+    p, li { margin: 0 0 14px; }
+    ul { padding-left: 22px; }
+    a { color: var(--link); }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 18px 0 32px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer nav a { margin-right: 16px; }
+    footer p { margin: 8px 0 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="./">mbgapp</a>
+    </header>
+    <main>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: 2026-10-30</p>
+      <p>
+        mbgapp is a personal tool with a single user: its owner. It does not collect, store,
+        share or sell data from anyone. This page explains, in plain language, what the tool
+        does with the owner&rsquo;s own data.
+      </p>
+
+      <h2>What data the tool accesses</h2>
+      <p>
+        mbgapp accesses files in the Google Drive folders that the owner chooses, using the
+        Google Drive API. It only reads the folders the owner points it at. It does not access
+        any other Google account data.
+      </p>
+
+      <h2>Why the data is accessed</h2>
+      <p>
+        The only purpose is to copy those files from the owner&rsquo;s Google Drive to the
+        owner&rsquo;s own computer. The data is not analysed, profiled, used for advertising,
+        or used to train any model.
+      </p>
+
+      <h2>Where credentials are stored</h2>
+      <p>
+        The OAuth credentials that Google issues to the tool are stored locally on the
+        owner&rsquo;s machine, in the rclone configuration file. They are never sent anywhere
+        other than to Google&rsquo;s own API endpoints to authorise requests.
+      </p>
+
+      <h2>What is shared with third parties</h2>
+      <p>
+        Nothing. No data, credentials or usage information is transferred to any third party.
+        There are no analytics, no telemetry and no external servers involved beyond Google
+        Drive itself.
+      </p>
+
+      <h2>Data retention</h2>
+      <p>
+        Copied files remain under the owner&rsquo;s control on the owner&rsquo;s computer for as
+        long as the owner keeps them. The copies in Google Drive may be deleted by the owner
+        after download. The tool keeps no other record of the files it has transferred.
+      </p>
+
+      <h2>How to revoke access</h2>
+      <p>
+        Access can be revoked at any time from the Google Account permissions page at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+        Deleting the rclone configuration file on the owner&rsquo;s machine also removes the
+        stored credentials.
+      </p>
+
+      <h2>Google API Services User Data Policy</h2>
+      <p>
+        mbgapp&rsquo;s use of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+        Services User Data Policy</a>, including the Limited Use requirements.
+      </p>
+
+      <h2>Changes and contact</h2>
+      <p>
+        Any change to this policy will be published on this page with an updated date.
+        Questions can be raised through the issue tracker of the
+        <a href="https://github.com/jordi-monmany/mbgapp">GitHub repository</a>.
+      </p>
+    </main>
+    <footer>
+      <nav>
+        <a href="./">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+      <p>Last updated: 2026-10-30</p>
+    </footer>
+  </div>
+</body>
+</html>
